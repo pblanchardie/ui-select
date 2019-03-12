@@ -1,7 +1,7 @@
 /*!
  * ui-select
  * http://github.com/pblanchardie/ui-select
- * Version: 0.19.8-pbl - 2019-03-12T11:01:14.704Z
+ * Version: 0.19.8-pbl - 2019-03-12T11:06:39.167Z
  * License: MIT
  */
 
@@ -811,10 +811,7 @@ uis.controller('uiSelectCtrl',
           if (containerWidth === 0) {
             return false;
           }
-          var inputWidth = containerWidth - input.offsetLeft;
-          if (multiple) {
-            inputWidth -= 10;
-          }
+          var inputWidth = containerWidth - input.offsetLeft - 10;
           if (inputWidth < 50) inputWidth = containerWidth;
           ctrl.searchInput.css('width', inputWidth+'px');
           return true;
